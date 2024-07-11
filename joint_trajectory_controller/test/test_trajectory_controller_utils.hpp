@@ -560,7 +560,8 @@ public:
   void test_state_publish_rate_target(int target_msg_count);
 
   void expectCommandPoint(
-    std::vector<double> position, std::vector<double> velocity = {0.0, 0.0, 0.0}, std::vector<double> effort = {0.0, 0.0, 0.0})
+    std::vector<double> position, std::vector<double> velocity = {0.0, 0.0, 0.0},
+    std::vector<double> effort = {0.0, 0.0, 0.0})
   {
     // it should be holding the given point
     // i.e., active but trivial trajectory (one point only)
